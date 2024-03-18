@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1285</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>511</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Serial Port</string>
+   </property>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>441</width>
+      <height>193</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Segoe Print&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>Port: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Segoe Print&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string>BaudRate: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="cbDevice">
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="cbBaudRate">
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pbOpenSerial">
+       <property name="whatsThis">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Segoe Print&quot;;
+color: rgb(0, 204, 0);</string>
+       </property>
+       <property name="text">
+        <string>Connect</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pbCloseSerial">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Segoe Print&quot;;
+color: rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Disconnect</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QTextEdit" name="teLog">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>511</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 11pt &quot;Segoe Print&quot;;
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="opendoor">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>50</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe Print&quot;;
+color: rgb(0, 170, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>Open door</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closedoor">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>110</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe Print&quot;;
+color: rgb(194, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>Close door</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Manualmode">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>170</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe Print&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>Manual mode</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Automode">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>230</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe Print&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>Auto mode</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titile_sensor2">
+   <property name="geometry">
+    <rect>
+     <x>844</x>
+     <y>180</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe Print&quot;;
+
+color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Sensor 2:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="title_sensor1">
+   <property name="geometry">
+    <rect>
+     <x>844</x>
+     <y>239</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Segoe Print&quot;;
+
+color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Sensor 1:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Operationmode">
+   <property name="geometry">
+    <rect>
+     <x>844</x>
+     <y>60</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 12pt &quot;Segoe Print&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Operation Mode: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="manual">
+   <property name="geometry">
+    <rect>
+     <x>844</x>
+     <y>120</y>
+     <width>421</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tinhieuSensor1">
+   <property name="geometry">
+    <rect>
+     <x>964</x>
+     <y>239</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tinhieusensor2">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>180</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;adasda&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="operation">
+   <property name="geometry">
+    <rect>
+     <x>1024</x>
+     <y>56</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13pt &quot;Segoe Print&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hienthithongtin">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>300</y>
+     <width>621</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 30pt &quot;Segoe Print&quot;;
+color: rgb(0, 125, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titile">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>10</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Segoe Print&quot;;
+
+color: rgb(0, 85, 255);</string>
+   </property>
+   <property name="text">
+    <string>Garage door controler</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
